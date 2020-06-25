@@ -13,6 +13,7 @@ models:
   ...
 pagesDir: "./content/posts/2020" # the root folder of all markdown pages
 models:
+...
   article:
     type: page # page models should always have "page" type
     label: Article
