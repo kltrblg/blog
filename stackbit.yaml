@@ -10,15 +10,9 @@ excludePages:
   - example/**/*
   - README.md
 models:
-  ...
 pagesDir: "./content/posts/2020" # the root folder of all markdown pages
 models:
-...
-  article:
-    type: page # page models should always have "page" type
-    label: Article
-    folder: articles # the folder where these markdown files are located
-    match: 
+match: 
       - "**/*" # match all files and subfolders in the articles folder
     exclude:
       - "index.md" # exclude a file in the articles folder
