@@ -18,12 +18,12 @@ collections:
     media_folder: "images"
     public_folder: "./images"
     fields:
-  [    { label: "Title", name: "title", widget: "string" },
-     , { label: "Author", name: "author", widget: "relation", collection: "authors", valueField: "name", searchFields: ["name"] }
-     ,  { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: false }
-     , { label: "Excerpt", name: "excerpt", widget: "string", required: false }
-     ,  { label: "Hero", name: "hero", widget: "image" },
-      { label: "Body", name: "body", widget: "markdown" }]
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "relation", collection: "authors", valueField: "name", searchFields: ["name"] }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: false }
+      - { label: "Excerpt", name: "excerpt", widget: "string", required: false }
+      - { label: "Hero", name: "hero", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "authors"
     label: "Authors"
     folder: "content/authors/authors"
@@ -36,8 +36,8 @@ collections:
     editor:
       preview: false
     fields:
-     [ { label: Name, name: name, widget: string },
-      { label: Bio, name: bio, widget: string },
-      { label: Featured, name: featured, widget: boolean, default: false },
-      { label: Avatar, name: avatar, widget: image },
-      { label: Social, name: social, widget: list, collapsed: false, field: { label: URL, name: url, widget: string } ]}
+      - { label: Name, name: name, widget: string }
+      - { label: Bio, name: bio, widget: string }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Avatar, name: avatar, widget: image }
+      - { label: Social, name: social, widget: list, collapsed: false, field: { label: URL, name: url, widget: string } }
