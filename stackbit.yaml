@@ -10,4 +10,28 @@ excludePages:
   - example/**/*
   - README.md
 models:
-  ... # see Stackbit Content Model documentation
+  ...
+pagesDir: "./content/posts/2020" # the root folder of all markdown pages
+models:
+  article:
+    type: page # page models should always have "page" type
+    label: Article
+    folder: articles # the folder where these markdown files are located
+    match: 
+      - "**/*" # match all files and subfolders in the articles folder
+    exclude:
+      - "index.md" # exclude a file in the articles folder
+    fields: # field models
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: image_thumbnail
+        label: Image
+        description: the articles image
+      - type: boolean
+        name: show_image
+        label: Show Image
+        description: Show or hide the image
