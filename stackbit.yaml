@@ -10,11 +10,4 @@ excludePages:
   - example/**/*
   - README.md
 models:
-pageLayoutKey: model_name
-models:
-    basicpage:
-        type: page
-        label: Basic Page
-        match: *.md
-        layout: basic_model
-        fields:
+...
